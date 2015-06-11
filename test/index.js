@@ -1,5 +1,5 @@
 var expect = require("chai").expect;
-var DOMTreeGenerator = require("../lib/DOMTreeGenerator");
+var DOMTreeGenerator = require("../lib/dom-tree-generator");
 
 describe("DOMTreeGenerator", function () {
     var generator = new DOMTreeGenerator();
