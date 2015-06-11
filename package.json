@@ -4,11 +4,13 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "postinstall": "./node_modules/.bin/bower install",
     "test": "./node_modules/.bin/mocha -t 5000 --compilers js:babel/register"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "bower": "^1.4.1",
     "jsdom": "^3.1.2",
     "underscore": "^1.8.3"
   },
