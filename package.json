@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "./node_modules/.bin/mocha -t 5000"
+    "test": "./node_modules/.bin/mocha -t 5000 --compilers js:babel/register"
   },
   "author": "",
   "license": "ISC",
@@ -13,7 +13,10 @@
     "underscore": "^1.8.3"
   },
   "devDependencies": {
+    "babel": "^5.5.6",
     "chai": "^3.0.0",
+    "gulp": "^3.9.0",
+    "gulp-babel": "^5.1.0",
     "mocha": "^2.2.5"
   }
 }

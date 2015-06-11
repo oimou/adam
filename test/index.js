@@ -1,12 +1,12 @@
-var expect = require("chai").expect;
-var DOMTreeGenerator = require("../lib/dom-tree-generator");
+import {expect} from "chai";
+import {DOMTreeGenerator} from "../lib/dom-tree-generator";
 
-describe("DOMTreeGenerator", function () {
+describe("DOMTreeGenerator", () => {
     var generator = new DOMTreeGenerator();
 
-    describe("generate", function () {
-        it("should return html string asynchronousy", function (done) {
-            generator.generate(function (err, html) {
+    describe("generate", () => {
+        it("should return html string asynchronousy", (done) => {
+            generator.generate((err, html) => {
                 if (err) return done(err);
 
                 expect(html).to.be.a("string");
