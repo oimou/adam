@@ -1,6 +1,6 @@
-var DOMTreeGenerator = require("./lib/dom-tree-generator");
-var generator = new DOMTreeGenerator();
+"use strict";
 
-generator.generate(function (err, html) {
-    console.log(html);
-});
+let DOMTreeGenerator = require("./lib/dom-tree-generator");
+let generator = new DOMTreeGenerator();
+
+generator.generate((err, html) => console.log(html)); // eslint-disable-line
